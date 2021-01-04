@@ -7,7 +7,7 @@ Plug 'numirias/semshi'
 Plug 'tpope/vim-commentary'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'dense-analysis/ale'
-
+Plug 'lervag/vimtex'
 call plug#end()
 
 filetype plugin indent on
