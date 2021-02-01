@@ -22,10 +22,7 @@ set mouse=a
 let g:ale_set_highlights = 0
 let g:vimtex_complete_close_braces = 1
 
-set background = "dark"
-
-set termguicolors     " enable true colors support
-colorscheme palenight
-
 tnoremap <Esc> <C-\><C-n>
+
+set rtp+=~/.fzf
 
