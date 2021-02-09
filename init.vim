@@ -43,3 +43,6 @@ runtime macros/matchit.vim
 let g:vimwiki_list = [
 \{'path': '~/vimwiki/','auto_tags':1}
 \]
+
+set rtp+=~/.fzf
+
