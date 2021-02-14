@@ -46,3 +46,5 @@ let g:vimwiki_list = [
 
 set rtp+=~/.fzf
 
+" no line numbers in terminal
+autocmd TermOpen * setlocal nonumber norelativenumber
