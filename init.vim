@@ -19,6 +19,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'JuliaEditorSupport/julia-vim'
+Plug 'sillybun/vim-repl'
 call plug#end()
 
 filetype plugin indent on
