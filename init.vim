@@ -19,7 +19,8 @@ Plug 'vimwiki/vimwiki'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'JuliaEditorSupport/julia-vim'
-Plug 'sillybun/vim-repl'
+Plug 'jpalardy/vim-slime'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 filetype plugin indent on
@@ -49,3 +50,8 @@ set rtp+=~/.fzf
 
 " no line numbers in terminal
 autocmd TermOpen * setlocal nonumber norelativenumber
+
+let mapleader = " "
+
+" set slime target to vim terminal
+let g:slime_target = "neovim"
