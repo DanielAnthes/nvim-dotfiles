@@ -21,6 +21,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'jpalardy/vim-slime'
 Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+Plug 'frazrepo/vim-rainbow'
 call plug#end()
 
 filetype plugin indent on
@@ -55,3 +57,12 @@ let mapleader = " "
 
 " set slime target to vim terminal
 let g:slime_target = "neovim"
+
+" toggle nerd tree
+map <C-n> :NERDTreeToggle<CR>
+
+" activate rainbow parantheses
+let g:rainbow_active = 1
+
+
+
