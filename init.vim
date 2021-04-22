@@ -3,11 +3,12 @@ filetype plugin on
 syntax on
 
 let g:plugged_home = '~/.vim/plugged'
+let g:python3_host_prog='/home/daniel/miniconda3/envs/nvim/bin/python'
+let g:deoplete#enable_at_startup = 1
 
 call plug#begin(g:plugged_home)
 
-Plug 'vim-airline/vim-airline'
-Plug 'numirias/semshi'
+" Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'dense-analysis/ale'
@@ -23,6 +24,10 @@ Plug 'jpalardy/vim-slime'
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree'
 Plug 'frazrepo/vim-rainbow'
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
+Plug 'davidhalter/jedi-vim'
 call plug#end()
 
 filetype plugin indent on
@@ -32,11 +37,7 @@ set clipboard+=unnamedplus
 set mouse=a
 let g:ale_set_highlights = 0
 let g:vimtex_complete_close_braces = 1
-
-" set background = "dark"
-" set termguicolors     " enable true colors support
-" colorscheme palenight
-
+"
 " escape to return to normal mode in terminal windows
 tnoremap <Esc> <C-\><C-n>
 
@@ -63,6 +64,4 @@ map <C-n> :NERDTreeToggle<CR>
 
 " activate rainbow parantheses
 let g:rainbow_active = 1
-
-
 
