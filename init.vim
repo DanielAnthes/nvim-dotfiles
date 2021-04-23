@@ -65,3 +65,5 @@ map <C-n> :NERDTreeToggle<CR>
 " activate rainbow parantheses
 let g:rainbow_active = 1
 
+let g:mapleader = "," " map leader to comma
+autocmd FileType python setlocal completeopt-=preview " no popups from jedi
